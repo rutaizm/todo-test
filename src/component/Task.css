@@ -1,0 +1,63 @@
+.task {
+    min-height: 80px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    background-color: white;
+    justify-content: space-between;
+  }
+    
+  .task__title, .task__attachement, .task__caption {
+    margin: 0;
+  }
+
+  .task__title {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+  }
+
+  .task__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .task__done-btn, .task__delete-btn {
+    width: 75px;
+    height: 20px;
+    background-color: #61dafb;
+    border-radius: 5px;
+    border: 1px solid;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .task_type_done {
+    text-decoration: line-through;    
+  }
+
+  .task__attachement {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+  }
+
+  .task_type_expired {
+    color: red;
+  }
+
+  .task__done-btn_disabled {
+    width: 75px;
+    height: 20px;
+    background-color: grey;
+    border-radius: 5px;
+    border: 1px solid;
+    text-decoration: none;
+    color: #d2d5db;
+    cursor: not-allowed;
+  }
